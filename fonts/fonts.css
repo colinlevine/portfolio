@@ -1,0 +1,9 @@
+* {
+    font-family: 'sf_monoregular';
+}
+
+@font-face {
+    font-family: 'sf_monoregular';
+    src: url('sfmono-regular.woff2') format('woff2'),
+         url('sfmono-regular.woff') format('woff');
+}

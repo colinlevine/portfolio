@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colin Levine</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <style>
+    [class*="col"] {
+      padding: 1rem;
+    }
+  </style>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="toggle-mode.css">
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-33FL0X8TSM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-33FL0X8TSM');
+  </script>
+</head>
+<body>
+  <div class="container-sm" id="intro">
+    <!-- intro text -->
+    <div class="row">
+      <h1 class="col" id="text"><blinkCursor style="margin-left: -12rem;">|</blinkCursor></h1>
+      <h1 class="col appear">COLIN LEVINE
+        <blinkCursor style="margin-left: -2rem;">|</blinkCursor>
+      </h1>
+    </div>
+
+
+    <!-- buttons -->
+    <div class="fadeR adjust" style="margin-left:-5rem,">
+      <a href="mailto:colinlevine7@gmail.com">
+        <img class="col zoom" src="img/mail radial.png" alt="Email" style="height: 4rem; margin-top: 0rem;">
+      </a>
+      <a href="https://www.linkedin.com/in/colinlevine/">
+        <img class="col zoom" src="img/linkedin radial.png" alt="LinkedIn" style="height: 4rem; margin-top: 0rem;">
+      </a>
+      <a href="https://github.com/colinlevine">
+        <img class="col zoom" src="img/github radial.png" alt="GitHub" style="height: 4rem; margin-top: 0rem;">
+      </a>
+      <div class="button r button-transform zoom" id="button-1">
+        <input type="checkbox" class="checkbox" onclick="toggleMode()"/>
+        <div class="knobs"></div>
+        <div class="layer"></div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- projects -->
+  <div class="container-xs" style="margin-bottom:13rem;">
+    <div class="row">
+        <h2 class="col hidden" id="projects">
+          RECENT PROJECTS
+        </h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col hidden">
+        <div class="card zoom h-100">
+          <div class="card-body">
+            <h3 class="card-title">Vocal GPT</h3>
+            <h6>Python with OpenAI API</h6>
+            <p class="card-text text-center">This project enables users to engage in verbal conversations with OpenAI's GPT-3.5-Turbo large language model. By leveraging voice recognition and text-to-speech capabilities, this project bridges the gap between human speech and AI-generated responses, creating a more interactive and natural conversational experience.</p>
+            <div class="text-center">
+              <a href="https://github.com/colinlevine/Vocal-GPT" class="btn">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col hidden">
+        <div class="card zoom h-100">
+          <div class="card-body">
+            <h3 class="card-title">Efficient Rate My Professor</h3>
+            <h6>HTML, CSS, Python with Flask and RateMyProfessorAPI</h6>
+            <p class="card-text text-center">This web app is designed to enhance the user experience of finding professors by allowing users to search based on courses, rather than searching each individual professor. This project is aimed to provide students with a more streamlined approach to accessing valuable professor reviews.</p>
+            <div class="text-center">
+              <a href="https://rate.colin.tools/" class="btn">Try It</a>
+              <a href="https://github.com/colinlevine/prof-finder" class="btn">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col hidden">
+        <div class="card zoom h-100">
+          <div class="card-body">
+            <h3 class="card-title">Portfolio</h3>
+            <h6>HTML, CSS with Bootstrap, JavaScript</h6>
+            <p class="card-text text-center">This project was specifically created to learn the fundamentals of web development, with a particular emphasis on mastering the Bootstrap library and building responsive websites using CSS. The main objective was to showcase various projects I have worked on and highlight my skills through an aesthetically appealing and user-friendly online portfolio.</p>
+            <div class="text-center">
+              <a href="https://github.com/colinlevine/portfolio" class="btn">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col hidden">
+        <div class="card zoom h-100">
+          <div class="card-body">
+            <h3 class="card-title">Calculator</h3>
+            <h6>HTML, CSS, JavaScript</h6>
+            <p class="card-text text-center">This four-function calculator was developed with the primary objective of honing JavaScript skills while utilizing CSS Grid for layout design and media query for responsiveness on mobile devices. This calculator allows users to perform basic arithmetic operations and served as a practical and hands-on way to practice essential frontend web development concepts.</p>
+            <div class="text-center">
+              <a href="https://calculator.colin.tools/" class="btn">Try It</a>
+              <a href="https://github.com/colinlevine/calculator" class="btn">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- about -->
+  <div class="container-sm">
+    <div class="row">
+        <div class="hidden zoom" style="width: 15rem;">
+          <img src="img/me.png" alt="Image of Colin Levine" >
+        </div>
+        <div class="col hidden">
+          <h2>ABOUT ME</h2>
+            <p id="about-me">
+            Hi, my name is Colin Levine, and I'm a sophomore engineering student at 
+              <a href="https://www.tamu.edu/">Texas A&M University</a>
+            planning to complete my Bachelor's Degree in Computer Science.
+            </p>
+            <a href="docs/Colin Levine Resume 2023.pdf" class="btn zoom" style="width: 10rem; margin-left: .5rem; margin-top: .5rem;">Resume
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-sm text-center" style="margin-top: 13rem;">
+    <footer class="col">MADE BY COLIN LEVINE</footer>
+  </div>
+  
+  <script src="app.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
