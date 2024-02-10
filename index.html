@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,23 +15,26 @@
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="toggle-mode.css">
-  
+
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-33FL0X8TSM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-33FL0X8TSM');
   </script>
 </head>
+
 <body>
   <div class="container-sm" id="intro">
     <!-- intro text -->
     <div class="row">
-      <h1 class="col" id="text"><blinkCursor style="margin-left: -12rem;">|</blinkCursor></h1>
+      <h1 class="col" id="text">
+        <blinkCursor style="margin-left: -12rem;">|</blinkCursor>
+      </h1>
       <h1 class="col appear">COLIN LEVINE
         <blinkCursor style="margin-left: -2rem;">|</blinkCursor>
       </h1>
@@ -49,7 +53,7 @@
         <img class="col zoom" src="img/github radial.png" alt="GitHub" style="height: 4rem; margin-top: 0rem;">
       </a>
       <div class="button r button-transform zoom" id="button-1">
-        <input type="checkbox" class="checkbox" onclick="toggleMode()"/>
+        <input type="checkbox" class="checkbox" onclick="toggleMode()" />
         <div class="knobs"></div>
         <div class="layer"></div>
       </div>
@@ -63,9 +67,9 @@
   <!-- projects -->
   <div class="container-xs" style="margin-bottom:13rem;">
     <div class="row">
-        <h2 class="col hidden" id="projects">
-          RECENT PROJECTS
-        </h2>
+      <h2 class="col hidden" id="projects">
+        RECENT PROJECTS
+      </h2>
     </div>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col hidden">
@@ -73,7 +77,10 @@
           <div class="card-body">
             <h3 class="card-title">Vocal GPT</h3>
             <h6>Python | OpenAI</h6>
-            <p class="card-text text-center">This project enables users to engage in verbal conversations with OpenAI's GPT-3.5-Turbo large language model. By leveraging voice recognition and text-to-speech capabilities, this project bridges the gap between human speech and AI-generated responses, creating a more interactive and natural conversational experience.</p>
+            <p class="card-text text-center">This project enables users to engage in verbal conversations with OpenAI's
+              GPT-3.5-Turbo large language model. By leveraging voice recognition and text-to-speech capabilities, this
+              project bridges the gap between human speech and AI-generated responses, creating a more interactive and
+              natural conversational experience.</p>
             <div class="text-center">
               <a href="https://github.com/colinlevine/Vocal-GPT" class="btn">Code</a>
             </div>
@@ -85,7 +92,10 @@
           <div class="card-body">
             <h3 class="card-title">Peer-to-Peer Video Calls</h3>
             <h6>JavaScript - Node.js, Express.js, EJS, PeerJS, Socket.io | CSS | HTML</h6>
-            <p class="card-text text-center">This full-stack development project is designed to facilitate secure video communication through peer-to-peer connections. Implementing a WebRTC signaling server hosted on Google Cloud ensures seamless peer-to-peer video connections. It also supports as many users in each room as the computer can handle.</p>
+            <p class="card-text text-center">This full-stack development project is designed to facilitate secure video
+              communication through peer-to-peer connections. Implementing a WebRTC signaling server hosted on Google
+              Cloud ensures seamless peer-to-peer video connections. It also supports as many users in each room as the
+              computer can handle.</p>
             <div class="text-center">
               <a href="https://video.colin.tools/" class="btn">Try It</a>
               <a href="https://github.com/colinlevine/p2p-video" class="btn">Code</a>
@@ -98,7 +108,10 @@
           <div class="card-body">
             <h3 class="card-title">Efficient Rate My Professor</h3>
             <h6>HTML | CSS | Python - Flask and RateMyProfessorAPI</h6>
-            <p class="card-text text-center">This web app is designed to enhance the user experience of finding professors by allowing users to search based on courses, rather than searching each individual professor. This project is aimed to provide students with a more streamlined approach to accessing valuable professor reviews.</p>
+            <p class="card-text text-center">This web app is designed to enhance the user experience of finding
+              professors by allowing users to search based on courses, rather than searching each individual professor.
+              This project is aimed to provide students with a more streamlined approach to accessing valuable professor
+              reviews.</p>
             <div class="text-center">
               <a href="https://rate.colin.tools/" class="btn">Try It</a>
               <a href="https://github.com/colinlevine/prof-finder" class="btn">Code</a>
@@ -111,7 +124,10 @@
           <div class="card-body">
             <h3 class="card-title">Portfolio</h3>
             <h6>HTML | CSS with Bootstrap | JavaScript</h6>
-            <p class="card-text text-center">This project was specifically created to learn the fundamentals of web development, with a particular emphasis on mastering the Bootstrap library and building responsive websites using CSS. The main objective was to showcase various projects I have worked on and highlight my skills through an aesthetically appealing and user-friendly online portfolio.</p>
+            <p class="card-text text-center">This project was specifically created to learn the fundamentals of web
+              development, with a particular emphasis on mastering the Bootstrap library and building responsive
+              websites using CSS. The main objective was to showcase various projects I have worked on and highlight my
+              skills through an aesthetically appealing and user-friendly online portfolio.</p>
             <div class="text-center">
               <a href="https://github.com/colinlevine/portfolio" class="btn">Code</a>
             </div>
@@ -123,57 +139,80 @@
 
 
 
-    <!-- hackathons -->
-    <div class="container-xs" style="margin-bottom:13rem;">
-      <div class="row">
-          <h2 class="col hidden" id="projects">
-            HACKATHONS
-          </h2>
+  <!-- hackathons -->
+  <div class="container-xs" style="margin-bottom:13rem;">
+    <div class="row">
+      <h2 class="col hidden" id="projects">
+        HACKATHONS
+      </h2>
+    </div>
+    <div class="row row-cols-1 g-4">
+      <div class="col hidden">
+        <div class="card zoom h-100">
+          <div class="card-body">
+            <h3 class="card-title">TAMU Hack | Recall GPT</h3>
+            <h6>HTMX | Node.js and Express.js | Bootstrap | OpenAI | MongoDB | Azure</h6>
+            <p class="card-text text-center">This study aid platform was developed to improve study skills and exam
+              preparation through active recall, leveraging the power of GPT 3.5 Turbo from OpenAI. Inspired by the
+              scientific effectiveness of active recall in learning, the platform assists users in comprehending complex
+              topics and provides guidance to reinforce understanding.</p>
+            <div class="text-center">
+              <a href="https://recall.colin.tools" class="btn">Try It</a>
+              <a href="https://github.com/colinlevine/tamu-hack-2024" class="btn">Code</a>
+              <a href="https://devpost.com/software/recall-gpt" class="btn">Devpost</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row row-cols-1 g-4">
-        <div class="col hidden">
-          <div class="card zoom h-100">
-            <div class="card-body">
-              <h3 class="card-title">Howdy Hack | Aggie Course Directory </h3>
-              <h6>JavaScript with Node.js, Express.js, EJS, Socket.io | CSS Bootstrap | OpenAI</h6>
-              <p class="card-text text-center">This hackathon was an opportunity for me to teach a team that was entirely new to web development. Together, we designed, built, and deployed a full-stack web application in just 24 hours. The project provides AI-generated course descriptions from GPT 3.5 Turbo, grade distribution graphs, and professor reviews for each computer science class, all within a single platform. The app was deployed on Google Cloud, ensuring accessibility for all students.</p>
-              <div class="text-center">
-                <a href="https://aggie-course-directory.uc.r.appspot.com/" class="btn">Try It</a>
-                <a href="https://github.com/colinlevine/howdy-hack-2023" class="btn">Code</a>
-                <a href="https://devpost.com/software/aggie-course-directory" class="btn">Devpost</a>
-              </div>
+      <div class="col hidden">
+        <div class="card zoom h-100">
+          <div class="card-body">
+            <h3 class="card-title">Howdy Hack | Aggie Course Directory </h3>
+            <h6>JavaScript with Node.js, Express.js, EJS, Socket.io | CSS Bootstrap | OpenAI</h6>
+            <p class="card-text text-center">This hackathon was an opportunity for me to teach a team that was entirely
+              new to web development. Together, we designed, built, and deployed a full-stack web application in just 24
+              hours. The project provides AI-generated course descriptions from GPT 3.5 Turbo, grade distribution
+              graphs, and professor reviews for each computer science class, all within a single platform. The app was
+              deployed on Google Cloud, ensuring accessibility for all students.</p>
+            <div class="text-center">
+              <a href="https://aggie-course-directory.uc.r.appspot.com/" class="btn">Try It</a>
+              <a href="https://github.com/colinlevine/howdy-hack-2023" class="btn">Code</a>
+              <a href="https://devpost.com/software/aggie-course-directory" class="btn">Devpost</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
   <!-- about -->
   <div class="container-sm">
     <div class="row">
-        <div class="hidden zoom" style="width: 15rem;">
-          <img src="img/me.png" alt="Image of Colin Levine" >
-        </div>
-        <div class="col hidden">
-          <h2>ABOUT ME</h2>
-            <p id="about-me">
-            Hi, my name is Colin Levine, and I'm a sophomore engineering student at 
-              <a href="https://www.tamu.edu/">Texas A&M University</a>
-            planning to complete my Bachelor's Degree in Computer Science.
-            </p>
-            <a href="docs/Colin Levine Resume Spring 2024.pdf" class="btn zoom" style="width: 10rem; margin-left: .5rem; margin-top: .5rem;">Resume
-            </a>
-          </div>
-        </div>
+      <div class="hidden zoom" style="width: 15rem;">
+        <img src="img/me.png" alt="Image of Colin Levine">
+      </div>
+      <div class="col hidden">
+        <h2>ABOUT ME</h2>
+        <p id="about-me">
+          Hi, my name is Colin Levine, and I'm a sophomore engineering student at
+          <a href="https://www.tamu.edu/">Texas A&M University</a>
+          planning to complete my Bachelor's Degree in Computer Science.
+        </p>
+        <a href="docs/Colin Levine Resume Spring 2024.pdf" class="btn zoom"
+          style="width: 10rem; margin-left: .5rem; margin-top: .5rem;">Resume
+        </a>
+      </div>
     </div>
+  </div>
   </div>
 
   <!-- footer -->
   <div class="container-sm text-center" style="margin-top: 13rem;">
     <footer class="col">MADE BY COLIN LEVINE</footer>
   </div>
-  
+
   <script src="app.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
